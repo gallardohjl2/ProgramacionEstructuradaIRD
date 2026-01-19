@@ -16,7 +16,18 @@ public class VerificacionAprobado {
 
         promedio = (calif1 + calif2 + calif3)/3;
 
-        if(promedio >= 7.0){
+       if(promedio >= 7.0){
+            if(promedio>=7.1 && promedio<=7.5){
+                JOptionPane.showMessageDialog(null,
+                        "Aprobado Bajo");
+            }else if(promedio>=7.6 && promedio<=8.7){
+                JOptionPane.showMessageDialog(null,
+                        "Aprobado Medio");
+            }else{
+                JOptionPane.showMessageDialog(null,
+                        "Aprobado Alto");
+            }
+        }else{
             JOptionPane.showMessageDialog(null,
                     "Aprobado");
         }
